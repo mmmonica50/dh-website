@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Digital Hosting SBS",
+  description: "you should know why you are here, otherwise, you shouldn't be..."
+}
 
 export default function Home() {
   return (
+    
     <main className="grid place-content-center bg-white">
       <div className="size-full object-center absolute inset-0 bg-pink overflow-hidden">
         <img src="/background.png" alt="background image" className="object-fill h-full w-full" />
